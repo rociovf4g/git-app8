@@ -6,12 +6,12 @@
 </head>
 <body>
 <!--Se determina la localizacion-->
-<div id='ubicacion'></div>
+<div id="ubicacion"></div>
 <script type="text/javascript">
  if(navigator.geolocation) {
 	 navigator.geolocation.getCurrentPosition (mostrarUbicacion);
  }else{alert("¡Error!Este navegador no soporta la Geolocalizacion.");}
- function refrescarUbicacion() {
+ function refrescarUbicacion(){
 	 navigator.geolocation.watchPosition(mostrarUbicacion);}
  </script>
 
@@ -35,7 +35,7 @@
 		mapholder.style.width ='750px';
 		var myOptions={
 			center:latlon,zoom :17,
-			mapTypeld:google.maps.MapTypeld.ROADMAP,
+			mapTypeId:google.maps.MapTypeId.ROADMAP,
 			mapTypeControl :false,
 			navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
 		};
